@@ -1,0 +1,5 @@
+{
+    "name": "Tag Release",
+    "description": "Create a git tag on the main branch automatically on a push or merge with an incremented release number.",
+    "iconName": "octicon tag"
+}
