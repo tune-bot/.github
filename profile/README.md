@@ -10,11 +10,4 @@ Each user can have their playlists saved and ready to go, and modify their playl
 The central audio player can be in the form of a Discord voice channel, or the mobile applications.
 
 ## Service Architecture
-```mermaid
-flowchart TD
-    E{fa:fa-microchip `**Core**`\n\nfa:fa-search Search\nfa:fa-download Download} --> H[fa:fa-database Database] 
-    D{fa:fa-code API} --> E
-    C[fa:fa-globe Web] --> D
-    B[fa:fa-mobile Mobile] --> D
-    A[fa:fa-robot Discord Bot] --> E
-```
+![Tunebot Service Architecture](https://github.com/tune-bot/.github/profile/svc-arch.png)
