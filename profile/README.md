@@ -12,11 +12,9 @@ The central audio player can be in the form of a Discord voice channel, or the m
 ## Service Architecture
 ```mermaid
 flowchart TD
-    E{Core} --> |Contains| F(Search)
-    E{Core} --> |Contains| G(Download)
-    E{Core} --> H[Database] 
-    D{API} --> E
-    C[Web] --> D
-    B[Mobile] --> D
-    A[Discord Bot] --> E
+    E{fa:fa-microchip `**Core**`\n\nfa:fa-search Search\nfa:fa-download Download} --> H[fa:fa-database Database] 
+    D{fa:fa-code API} --> E
+    C[fa:fa-globe Web] --> D
+    B[fa:fa-mobile Mobile] --> D
+    A[fa:fa-robot Discord Bot] --> E
 ```
