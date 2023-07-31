@@ -8,3 +8,15 @@ This makes it easy for people hanging out together to play a mix of music that e
 without having to first spend a lot of time searching for and queueing up songs.
 Each user can have their playlists saved and ready to go, and modify their playlists and blacklist at any time.
 The central audio player can be in the form of a Discord voice channel, or the mobile applications.
+
+## Service Architecture
+```mermaid
+flowchart TD
+    E{Core} --> |Contains| F(Search)
+    E{Core} --> |Contains| G(Download)
+    E{Core} --> H[Database] 
+    D{API} --> E
+    C[Web] --> D
+    B[Mobile] --> D
+    A[Discord Bot] --> E
+```
